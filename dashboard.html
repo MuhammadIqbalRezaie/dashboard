@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06472b"><meta name="description" content="AJ USDT account dashboard">
+<title>Dashboard | AJ USDT</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body class="dashboard-page">
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true">
+<symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 3h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="m10 9 3 3 3-3"/></symbol>
+<symbol id="i-orders" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3V2h6v1M9 8h6M9 12h6M9 16h4"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M3 8V5a2 2 0 0 1 2-2h13M16 13h5"/><circle cx="16" cy="13" r=".7"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 20 5v6c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5z"/><path d="m8 12 2.5 2.5L16 9"/></symbol>
+<symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 13v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="12" width="4" height="7" rx="2"/><rect x="18" y="12" width="4" height="7" rx="2"/><path d="M18 19a6 6 0 0 1-6 3h-2"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+<symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 7 5 4 4-7 4 7 5-4-2 13H5z"/><path d="M5 17h14"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.2 1-1.5 2.6-1.5-.6a8 8 0 0 1-1.7 1l-.2 1.6h-3l-.3-1.6a8 8 0 0 1-1.7-1l-1.5.6-1.5-2.6 1.2-1a7 7 0 0 1 0-2l-1.2-1 1.5-2.6 1.5.6a8 8 0 0 1 1.7-1l.3-1.6h3l.2 1.6a8 8 0 0 1 1.7 1l1.5-.6 1.5 2.6-1.2 1a7 7 0 0 1-.1 2z"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 3 8-9"/><path d="M15 5h6v6"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V11M10 20V5M16 20v-8M22 20V2"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+</svg>
+<aside class="sidebar" id="sidebar">
+  <a class="side-brand" href="index.html"><span class="brand-mark">AJ</span><span>USDT</span></a>
+  <nav class="side-nav">
+    <a class="active" href="dashboard.html"><svg class="icon " aria-hidden="true"><use href="#i-home"></use></svg><span>Dashboard</span></a>
+    <a href="index.html#buy-form"><svg class="icon " aria-hidden="true"><use href="#i-cart"></use></svg><span>Buy USDT</span></a>
+    <a href="#orders"><svg class="icon " aria-hidden="true"><use href="#i-orders"></use></svg><span>My Orders</span></a>
+    <a href="#wallet"><svg class="icon " aria-hidden="true"><use href="#i-wallet"></use></svg><span>My Wallet</span></a>
+    <a href="#kyc"><svg class="icon " aria-hidden="true"><use href="#i-shield"></use></svg><span>KYC Verification</span></a>
+    <a href="#support"><svg class="icon " aria-hidden="true"><use href="#i-headset"></use></svg><span>Support Tickets</span></a>
+    <a href="#profile"><svg class="icon " aria-hidden="true"><use href="#i-user"></use></svg><span>Profile</span></a>
+    <a href="#membership"><svg class="icon " aria-hidden="true"><use href="#i-crown"></use></svg><span>Membership</span></a>
+    <a href="#transactions"><svg class="icon " aria-hidden="true"><use href="#i-orders"></use></svg><span>Transaction Logs</span></a>
+    <a href="#settings"><svg class="icon " aria-hidden="true"><use href="#i-settings"></use></svg><span>Settings</span></a>
+    <a href="index.html"><svg class="icon " aria-hidden="true"><use href="#i-logout"></use></svg><span>Logout</span></a>
+  </nav>
+  <div class="sidebar-help"><div class="help-icon"><svg class="icon " aria-hidden="true"><use href="#i-headset"></use></svg></div><b>Need Help?</b><p>Our support team is here for you.</p><a href="#support">Contact Support</a></div>
+  <small class="copyright">AJ USDT © 2025<br>All rights reserved.</small>
+</aside>
+
+<main class="dashboard-main">
+  <header class="mobile-topbar">
+    <button class="icon-button dashboard-menu" aria-label="Open menu" aria-expanded="false"><svg class="icon " aria-hidden="true"><use href="#i-menu"></use></svg></button>
+    <a class="mobile-brand" href="dashboard.html"><span class="brand-mark">AJ</span><b>USDT</b></a>
+    <button class="icon-button notification" aria-label="Notifications"><svg class="icon " aria-hidden="true"><use href="#i-bell"></use></svg><i>2</i></button>
+    <button class="profile-trigger" aria-label="Open profile"><span class="avatar">AJ</span><span class="profile-chevron">⌄</span></button>
+  </header>
+  <header class="desktop-topbar">
+    <div class="topbar-spacer"></div>
+    <button class="icon-button notification" aria-label="Notifications"><svg class="icon " aria-hidden="true"><use href="#i-bell"></use></svg><i>2</i></button>
+    <button class="desktop-user"><span class="avatar">AJ</span><b>Ali Jawadi <em>●</em></b><span>⌄</span></button>
+  </header>
+
+  <section class="dashboard-welcome">
+    <div class="welcome-banner">
+      <div class="welcome-copy"><h1>Welcome Back, <span>Ali Jawadi 👋</span></h1><p>Trade Smarter · Faster · Safer</p><a href="index.html">AJ USDT <span>→</span></a></div>
+      <div class="hero-coin"><span>₮</span><i></i></div>
+    </div>
+    <article class="membership-card" id="membership">
+      <div class="membership-crown"><svg class="icon " aria-hidden="true"><use href="#i-crown"></use></svg></div><div class="membership-copy"><b>Your Membership</b><strong>VIP</strong><p>Enjoy higher limits and<br> special benefits.</p><a href="#membership">View Benefits <span>→</span></a></div>
+    </article>
+  </section>
+
+  <section class="overview-grid">
+    <article class="balance-card panel" id="wallet">
+      <div class="usdt-coin"><span>₮</span></div><div class="balance-content"><p>Your Balance</p><h2>125.50 <small>USDT</small></h2><b>≈ 8,766 AFN</b></div><span class="balance-trend"><svg class="icon " aria-hidden="true"><use href="#i-trend"></use></svg></span>
+    </article>
+    <a class="quick-card quick-primary" href="index.html#buy-form"><span class="quick-icon"><svg class="icon " aria-hidden="true"><use href="#i-cart"></use></svg></span><b>Buy USDT</b><small>Fast &amp; Secure</small></a>
+    <a class="quick-card" href="#kyc"><span class="quick-icon"><svg class="icon " aria-hidden="true"><use href="#i-shield"></use></svg></span><b>KYC</b><small>Verify Account</small></a>
+    <a class="quick-card" href="#support"><span class="quick-icon"><svg class="icon " aria-hidden="true"><use href="#i-headset"></use></svg></span><b>Support</b><small>Get Help</small></a>
+  </section>
+
+  <section class="dashboard-grid">
+    <article class="orders-card panel" id="orders">
+      <div class="panel-heading"><h2><span class="heading-icon"><svg class="icon " aria-hidden="true"><use href="#i-orders"></use></svg></span>Recent Orders</h2><a href="#transactions">View All <span>→</span></a></div>
+      <div class="table-scroll"><table><thead><tr><th>#</th><th>Amount</th><th>Rate</th><th>Status</th><th>Date</th></tr></thead><tbody>
+      <tr><td>#AJ20261119-001</td><td>1,000 AFN</td><td>85.00</td><td><span class="status">Completed</span></td><td>2 min ago</td></tr>
+      <tr><td>#AJ20261118-892</td><td>500 AFN</td><td>85.00</td><td><span class="status">Completed</span></td><td>1 hour ago</td></tr>
+      <tr><td>#AJ20261117-721</td><td>1,000 AFN</td><td>84.50</td><td><span class="status">Completed</span></td><td>1 day ago</td></tr>
+      </tbody></table></div>
+    </article>
+    <article class="promo-card">
+      <div class="gift-box"><span class="gift-bow">✦</span><span class="gift-ribbon"></span><span class="gift-lid"></span></div>
+      <div class="promo-copy"><h2>AJ USDT</h2><p>Fast · Secure · Reliable</p><a href="index.html#buy-form">Buy Now <span>→</span></a></div>
+    </article>
+    <article class="stats-card panel">
+      <div class="panel-heading"><h2><span class="heading-icon"><svg class="icon " aria-hidden="true"><use href="#i-chart"></use></svg></span>Account Statistics</h2></div>
+      <div class="stats-list">
+        <div><span class="stat-icon"><svg class="icon " aria-hidden="true"><use href="#i-cart"></use></svg></span><b>3</b><small>Total Orders</small></div>
+        <div><span class="stat-icon round-check"><svg class="icon " aria-hidden="true"><use href="#i-check"></use></svg></span><b>100%</b><small>Success Rate</small></div>
+        <div><span class="stat-icon"><svg class="icon " aria-hidden="true"><use href="#i-chart"></use></svg></span><b>2,450 AFN</b><small>Total Volume</small></div>
+        <div><span class="stat-icon gold"><svg class="icon " aria-hidden="true"><use href="#i-star"></use></svg></span><b>VIP</b><small>Your Level</small></div>
+      </div>
+    </article>
+    <article class="promise-card panel">
+      <span class="promise-shield"><svg class="icon " aria-hidden="true"><use href="#i-shield"></use></svg></span><div class="promise-copy"><h2>Our Promise</h2><p><svg class="icon " aria-hidden="true"><use href="#i-check"></use></svg> Secure Transactions</p><p><svg class="icon " aria-hidden="true"><use href="#i-check"></use></svg> Instant Delivery</p><p><svg class="icon " aria-hidden="true"><use href="#i-check"></use></svg> 24/7 Support</p></div><div class="promise-coin"><span>₮</span></div>
+    </article>
+  </section>
+</main>
+
+<nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+  <a class="selected" href="dashboard.html"><svg class="icon " aria-hidden="true"><use href="#i-home"></use></svg><span>Home</span></a>
+  <a href="#orders"><svg class="icon " aria-hidden="true"><use href="#i-orders"></use></svg><span>Orders</span></a>
+  <a href="#support"><svg class="icon " aria-hidden="true"><use href="#i-headset"></use></svg><span>Support</span></a>
+  <a href="#profile"><svg class="icon " aria-hidden="true"><use href="#i-user"></use></svg><span>Profile</span></a>
+  <a href="#settings"><svg class="icon " aria-hidden="true"><use href="#i-settings"></use></svg><span>Settings</span></a>
+</nav>
+<div class="toast" role="status" aria-live="polite"></div>
+</body></html>

@@ -1,0 +1,14 @@
+{
+  "name": "AJ USDT",
+  "short_name": "AJ USDT",
+  "description": "Buy USDT with AFN in Afghanistan",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff4e3",
+  "theme_color": "#06472b",
+  "icons": [
+    {"src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}
